@@ -55,9 +55,27 @@ Use the model name shown in your AI ROUTER dashboard. The example uses `gpt-5.4-
 - 中文: [docs/cn](docs/cn/README.md)
 - Русский: [docs/ru](docs/ru/README.md)
 - فارسی: [docs/fa](docs/fa/README.md)
+- SEO topic index: [docs/seo-index.md](docs/seo-index.md)
+- ChatGPT API relay: [docs/chatgpt-api-relay.md](docs/chatgpt-api-relay.md)
+- OpenAI-compatible endpoint: [docs/openai-compatible-endpoint.md](docs/openai-compatible-endpoint.md)
+- API key usage tracking: [docs/api-key-usage-tracking.md](docs/api-key-usage-tracking.md)
+- Daily and weekly plans: [docs/daily-weekly-chatgpt-api-plans.md](docs/daily-weekly-chatgpt-api-plans.md)
+- Coding-agent workflows: [docs/coding-agent-chatgpt-api.md](docs/coding-agent-chatgpt-api.md)
+- FAQ: [docs/faq.md](docs/faq.md)
+- Glossary: [docs/glossary.md](docs/glossary.md)
 - All supported language landing pages: [docs/languages.md](docs/languages.md)
 - OpenAI-compatible API notes: [docs/openai-compatible-api.md](docs/openai-compatible-api.md)
 - International SEO link map: [docs/international-seo.md](docs/international-seo.md)
+
+## Use-case pages
+
+- [ChatGPT API for AI app development](docs/use-cases/ai-app-development.md)
+- [ChatGPT API for scripts and automation](docs/use-cases/scripts-and-automation.md)
+
+## Integration pages
+
+- [OpenAI Python SDK with AI ROUTER](docs/integrations/openai-python-sdk.md)
+- [OpenAI Node.js SDK with AI ROUTER](docs/integrations/openai-nodejs-sdk.md)
 
 ## What this repository contains
 
@@ -68,4 +86,3 @@ AI ROUTER is not an official OpenAI service. It provides an independent relay se
 ## Keywords
 
 ChatGPT API relay, OpenAI-compatible API, AI API relay, LLM API, API key management, usage tracking, daily ChatGPT API plan, weekly ChatGPT API plan, developer AI API.
-

@@ -18,6 +18,15 @@ https://api.ai-router.dev/v1
 - 短期项目按天或按周购买 ChatGPT API 额度。
 - 团队需要查看 API Key 的用量和额度状态。
 
+## 中文主题页
+
+- [ChatGPT API 中转说明](chatgpt-api-relay.md)
+- [OpenAI 兼容接口](../openai-compatible-endpoint.md)
+- [API Key 用量查询](../api-key-usage-tracking.md)
+- [日套餐和周套餐](../daily-weekly-chatgpt-api-plans.md)
+- [Coding Agent 工作流](../coding-agent-chatgpt-api.md)
+- [FAQ](../faq.md)
+
 ## 接入流程
 
 1. 注册 AI ROUTER 账号。
@@ -27,4 +36,3 @@ https://api.ai-router.dev/v1
 5. 按 OpenAI 兼容方式发起请求。
 
 AI ROUTER 不是 OpenAI 官方服务。我们提供独立的大模型中转服务，调用方式兼容 OpenAI，具体套餐、模型和价格以站内展示为准。
-

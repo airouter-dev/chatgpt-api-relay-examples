@@ -17,6 +17,15 @@ https://api.ai-router.dev/v1
 - Use daily or weekly quota plans for short projects.
 - Track API key usage, balance, quota, and subscription status.
 
+## Topic guides
+
+- [ChatGPT API relay](../chatgpt-api-relay.md)
+- [OpenAI-compatible endpoint](../openai-compatible-endpoint.md)
+- [API key usage tracking](../api-key-usage-tracking.md)
+- [Daily and weekly ChatGPT API plans](../daily-weekly-chatgpt-api-plans.md)
+- [Coding-agent ChatGPT API workflows](../coding-agent-chatgpt-api.md)
+- [FAQ](../faq.md)
+
 ## Basic flow
 
 1. Create an AI ROUTER account.
@@ -26,4 +35,3 @@ https://api.ai-router.dev/v1
 5. Send OpenAI-compatible requests.
 
 AI ROUTER is not an official OpenAI service. It provides an independent relay service with OpenAI-compatible request patterns.
-

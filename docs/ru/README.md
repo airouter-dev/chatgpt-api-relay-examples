@@ -18,6 +18,15 @@ https://api.ai-router.dev/v1
 - Контроль расхода, баланса, квоты и срока действия подписки.
 - Рабочие процессы coding agents и внутренние инструменты.
 
+## Тематические страницы
+
+- [ChatGPT API relay на русском](chatgpt-api-relay.md)
+- [OpenAI-compatible endpoint](../openai-compatible-endpoint.md)
+- [Usage tracking для API key](../api-key-usage-tracking.md)
+- [Дневные и недельные планы](../daily-weekly-chatgpt-api-plans.md)
+- [Coding-agent workflows](../coding-agent-chatgpt-api.md)
+- [FAQ](../faq.md)
+
 ## Базовый порядок
 
 1. Создайте аккаунт AI ROUTER.
@@ -27,4 +36,3 @@ https://api.ai-router.dev/v1
 5. Отправляйте OpenAI-совместимые запросы.
 
 AI ROUTER не является официальным сервисом OpenAI. Это независимый API relay с OpenAI-совместимым форматом запросов. Доступность моделей, планы и цены отображаются в панели продукта.
-

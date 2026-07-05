@@ -18,6 +18,15 @@ https://api.ai-router.dev/v1
 - مشاهده مصرف، موجودی، سهمیه و وضعیت اشتراک API key.
 - استفاده در ابزارهای داخلی و جریان های کاری coding agent.
 
+## صفحه های موضوعی
+
+- [رله ChatGPT API به فارسی](chatgpt-api-relay.md)
+- [OpenAI-compatible endpoint](../openai-compatible-endpoint.md)
+- [Usage tracking برای API key](../api-key-usage-tracking.md)
+- [پلن های روزانه و هفتگی](../daily-weekly-chatgpt-api-plans.md)
+- [Coding-agent workflows](../coding-agent-chatgpt-api.md)
+- [FAQ](../faq.md)
+
 ## مسیر شروع
 
 1. یک حساب AI ROUTER بسازید.
@@ -27,4 +36,3 @@ https://api.ai-router.dev/v1
 5. درخواست های سازگار با OpenAI ارسال کنید.
 
 AI ROUTER سرویس رسمی OpenAI نیست. این سرویس یک relay مستقل با الگوی درخواست سازگار با OpenAI است. مدل ها، پلن ها و قیمت ها در داشبورد محصول نمایش داده می شوند.
-
