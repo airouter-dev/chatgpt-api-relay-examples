@@ -64,6 +64,7 @@ Use the model name shown in your AI ROUTER dashboard. The example uses `gpt-5.4-
 - FAQ: [docs/faq.md](docs/faq.md)
 - Glossary: [docs/glossary.md](docs/glossary.md)
 - All supported language landing pages: [docs/languages.md](docs/languages.md)
+- Localized GitHub docs for all supported languages: [docs/localized-docs.md](docs/localized-docs.md)
 - OpenAI-compatible API notes: [docs/openai-compatible-api.md](docs/openai-compatible-api.md)
 - International SEO link map: [docs/international-seo.md](docs/international-seo.md)
 

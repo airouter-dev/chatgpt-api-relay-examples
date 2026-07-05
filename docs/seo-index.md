@@ -28,10 +28,14 @@ The goal is to make each major search intent easy to find from GitHub, Google, a
 | Russian | [ru](ru/README.md) | https://ai-router.dev/ru |
 | Persian | [fa](fa/README.md) | https://ai-router.dev/fa |
 
+All supported language entries are listed here:
+
+- [Localized GitHub docs](localized-docs.md)
+- [Supported language landing pages](languages.md)
+
 ## Trust pages
 
 - [FAQ](faq.md)
 - [Glossary](glossary.md)
 - [Security policy](../SECURITY.md)
 - [Contributing guide](../CONTRIBUTING.md)
-
