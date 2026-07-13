@@ -10,10 +10,9 @@ Use these connection values:
 - Model: a current `id` returned by authenticated `GET /v1/models`, or the same
   model ID shown in the AI ROUTER dashboard
 
-Use the API base URL, not `https://ai-router.dev`. The `/v1` suffix is required
-for OpenAI-compatible requests. If an Open WebUI release automatically appends
-`/v1`, enter the value its connection test expects rather than creating a
-duplicated `/v1/v1` path.
+Use the exact API base URL above, without a trailing slash, rather than
+`https://ai-router.dev`. Open WebUI appends endpoint paths such as `/models`, so
+the configured URL must already include the single `/v1` suffix.
 
 ## Verification sequence
 
@@ -28,5 +27,6 @@ Never place a shared production key in a public workspace export or a committed
 configuration file. Test streaming, file features, and tool calls independently
 because OpenAI-compatible endpoints can support different feature subsets.
 
-Related: [client integration overview](README.md) and [BYOK smoke-test
+Related: [Open WebUI's official OpenAI-compatible provider documentation](https://docs.openwebui.com/getting-started/quick-start/connect-a-provider/starting-with-openai-compatible),
+[client integration overview](README.md), and [BYOK smoke-test
 checklist](byok-smoke-test-checklist.md).

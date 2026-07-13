@@ -35,5 +35,6 @@ endpoint, and LiteLLM forwards the selected model to AI ROUTER.
    ROUTER dashboard.
 4. Test streaming and tool calls separately if you enable them.
 
-Related: [client integration overview](README.md) and [BYOK smoke-test
+Related: [LiteLLM's official OpenAI-compatible endpoint documentation](https://docs.litellm.ai/docs/providers/openai_compatible),
+[client integration overview](README.md), and [BYOK smoke-test
 checklist](byok-smoke-test-checklist.md).

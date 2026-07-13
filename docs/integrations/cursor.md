@@ -1,32 +1,20 @@
-# Cursor with AI ROUTER
+# Cursor Compatibility Status for AI ROUTER
 
-Use this guide only when your Cursor version exposes an OpenAI-compatible or
-custom provider configuration. The names and availability of Cursor settings can
-change between releases.
+Cursor's current official BYOK documentation lists API-key configuration for
+OpenAI, Anthropic, Google, Azure OpenAI, and AWS Bedrock. It does not document an
+arbitrary OpenAI-compatible base URL or custom provider. AI ROUTER therefore
+does not claim a supported direct Cursor integration at this time.
 
-## Configuration values
+Do not paste an AI ROUTER key into Cursor's OpenAI key field or attempt to alter
+Cursor's network behavior. Use a client that officially permits a custom
+OpenAI-compatible endpoint, such as Continue, LiteLLM, or Open WebUI, or call the
+AI ROUTER API directly with an OpenAI SDK.
 
-Enter these values in the applicable custom-provider fields:
+If Cursor publishes a custom-endpoint workflow in the future, revalidate its
+base-URL, model-discovery, feature, and key-handling behavior before documenting
+AI ROUTER setup steps here.
 
-- API base URL: `https://api.ai-router.dev/v1`
-- API key: an AI ROUTER API key stored in Cursor's secret/configuration store
-- Model: an `id` returned by authenticated `GET /v1/models`, or the same current
-  model ID shown in the AI ROUTER dashboard
-
-The base URL must include `/v1`. Do not use the website URL as an API base URL.
-
-## Verify the connection
-
-1. Create a dedicated test API key rather than reusing a shared production key.
-2. Select or enter one current model ID.
-3. Send one short, non-sensitive prompt.
-4. Confirm that usage appears for the expected key in the AI ROUTER dashboard.
-
-If Cursor does not list a model automatically, use its manual model-entry field
-to enter a current ID that you discovered through `/v1/models` or the dashboard.
-If the installed version does not permit a custom OpenAI-compatible endpoint,
-use the provider configuration supported by that version instead of attempting
-to modify its network behavior.
+Source: [Cursor's official BYOK documentation](https://cursor.com/help/models-and-usage/api-keys).
 
 Related: [client integration overview](README.md) and [BYOK smoke-test
 checklist](byok-smoke-test-checklist.md).

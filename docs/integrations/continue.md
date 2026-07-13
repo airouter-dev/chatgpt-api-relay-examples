@@ -14,8 +14,8 @@ these values:
 ## `config.yaml` example
 
 For Continue releases using the current `config.yaml` schema, the equivalent
-local configuration has this shape. Replace both placeholders locally; do not
-commit a real key.
+local configuration has this shape. Replace the model placeholder locally and
+keep the API key in Continue's secret resolution path.
 
 ```yaml
 name: AI ROUTER
@@ -26,16 +26,13 @@ models:
     provider: openai
     model: MODEL_ID_FROM_AI_ROUTER
     apiBase: https://api.ai-router.dev/v1
-    apiKey: YOUR_AI_ROUTER_KEY
+    apiKey: ${{ secrets.AI_ROUTER_API_KEY }}
 ```
 
 `MODEL_ID_FROM_AI_ROUTER` must be an actual current ID returned by `/v1/models`
-or shown in the dashboard. When your Continue version supports a secret
-reference, use it instead of placing the key directly in the local file.
-
-Do not commit a plaintext key to a project-level configuration file. If your
-Continue release supports a secret reference, use that reference; otherwise keep
-the local configuration outside version control.
+or shown in the dashboard. Put `AI_ROUTER_API_KEY=your_key` in a Continue-supported
+local `.env` file, such as `~/.continue/.env`, and do not commit that file or a
+plaintext key to a project-level configuration file.
 
 ## Verify the configuration
 
@@ -49,5 +46,6 @@ If automatic model discovery is incomplete, use the manual model-ID field to
 enter a current ID discovered through `/v1/models` or the dashboard. The
 configured base URL must end with `/v1`.
 
-Related: [client integration overview](README.md) and [BYOK smoke-test
+Related: [Continue's official OpenAI-compatible provider documentation](https://docs.continue.dev/customize/model-providers/openai),
+[client integration overview](README.md), and [BYOK smoke-test
 checklist](byok-smoke-test-checklist.md).

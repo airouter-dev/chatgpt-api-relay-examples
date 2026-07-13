@@ -91,7 +91,7 @@ Use the model name returned by `/v1/models` or shown in your AI ROUTER dashboard
 
 - [OpenAI Python SDK with AI ROUTER](docs/integrations/openai-python-sdk.md)
 - [OpenAI Node.js SDK with AI ROUTER](docs/integrations/openai-nodejs-sdk.md)
-- [Cursor](docs/integrations/cursor.md)
+- [Cursor compatibility status](docs/integrations/cursor.md)
 - [Continue](docs/integrations/continue.md)
 - [LiteLLM](docs/integrations/litellm.md)
 - [Open WebUI](docs/integrations/open-webui.md)

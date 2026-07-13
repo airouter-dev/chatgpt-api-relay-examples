@@ -25,7 +25,7 @@ store or environment variable; never commit a production key to a repository.
 
 - [OpenAI Python SDK](openai-python-sdk.md)
 - [OpenAI Node.js SDK](openai-nodejs-sdk.md)
-- [Cursor](cursor.md)
+- [Cursor compatibility status](cursor.md)
 - [Continue](continue.md)
 - [LiteLLM](litellm.md)
 - [Open WebUI](open-webui.md)
