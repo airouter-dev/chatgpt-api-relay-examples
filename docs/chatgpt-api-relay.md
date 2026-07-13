@@ -27,18 +27,23 @@ https://api.ai-router.dev/v1
 ## Basic curl request
 
 ```bash
+export AI_ROUTER_MODEL="model_id_from_your_dashboard_or_models_response"
+
 curl https://api.ai-router.dev/v1/chat/completions \
   -H "Authorization: Bearer $AI_ROUTER_API_KEY" \
   -H "Content-Type: application/json" \
-  -d '{
-    "model": "gpt-5.4-mini",
+  --data-binary @- <<JSON
+  {
+    "model": "$AI_ROUTER_MODEL",
     "messages": [
       { "role": "user", "content": "Say hello from a ChatGPT API relay." }
     ]
-  }'
+  }
+JSON
 ```
 
-Use the model names available in your AI ROUTER dashboard.
+Use a model ID returned by `GET /v1/models` for your API key or shown in your
+AI ROUTER dashboard.
 
 ## Related pages
 
@@ -47,6 +52,6 @@ Use the model names available in your AI ROUTER dashboard.
 - [Daily and weekly plans](daily-weekly-chatgpt-api-plans.md)
 - [OpenAI Python SDK setup](integrations/openai-python-sdk.md)
 - [OpenAI Node.js SDK setup](integrations/openai-nodejs-sdk.md)
+- [Client integration guides](integrations/README.md)
 
 AI ROUTER is not an official OpenAI service. It provides an independent relay service with OpenAI-compatible request patterns.
-

@@ -18,6 +18,7 @@ pip install openai
 
 ```bash
 export AI_ROUTER_API_KEY="replace_with_your_api_key"
+export AI_ROUTER_MODEL="model_id_from_your_dashboard_or_models_response"
 ```
 
 ## Python example
@@ -32,7 +33,7 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="gpt-5.4-mini",
+    model=os.environ["AI_ROUTER_MODEL"],
     messages=[
         {"role": "user", "content": "Say hello from AI ROUTER."}
     ],
@@ -41,10 +42,10 @@ response = client.chat.completions.create(
 print(response.choices[0].message.content)
 ```
 
-Use the model names available in your AI ROUTER dashboard.
+Use a model ID returned by authenticated `GET /v1/models` or shown in your AI
+ROUTER dashboard.
 
 Related:
 
 - [OpenAI-compatible endpoint](../openai-compatible-endpoint.md)
 - [ChatGPT API relay](../chatgpt-api-relay.md)
-

@@ -21,7 +21,9 @@ In many cases, yes. Keep the SDK and set the base URL to AI ROUTER's OpenAI-comp
 
 ## Which model should I use?
 
-Use the model names available in your AI ROUTER dashboard. Examples in this repository use `gpt-5.4-mini` as a low-cost default example.
+Use a model ID returned by authenticated `GET /v1/models` or shown in your AI
+ROUTER dashboard. Examples read the model from `AI_ROUTER_MODEL`, so the
+repository does not hard-code a catalog entry that may become unavailable.
 
 ## Can I track API key usage?
 
@@ -41,4 +43,3 @@ Priority SEO languages:
 - Chinese: https://ai-router.dev/cn
 - Russian: https://ai-router.dev/ru
 - Persian: https://ai-router.dev/fa
-

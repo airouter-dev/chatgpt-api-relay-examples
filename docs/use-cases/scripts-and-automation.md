@@ -17,16 +17,19 @@ Scripts often need a simple endpoint, an API key, and a way to check usage after
 
 ```bash
 export AI_ROUTER_API_KEY="replace_with_your_api_key"
+export AI_ROUTER_MODEL="model_id_from_your_dashboard_or_models_response"
 
 curl https://api.ai-router.dev/v1/chat/completions \
   -H "Authorization: Bearer $AI_ROUTER_API_KEY" \
   -H "Content-Type: application/json" \
-  -d '{
-    "model": "gpt-5.4-mini",
+  --data-binary @- <<JSON
+  {
+    "model": "$AI_ROUTER_MODEL",
     "messages": [
       { "role": "user", "content": "Summarize this task in one sentence." }
     ]
-  }'
+  }
+JSON
 ```
 
 ## Operational advice
@@ -41,4 +44,3 @@ Related:
 
 - [API key usage tracking](../api-key-usage-tracking.md)
 - [Daily and weekly plans](../daily-weekly-chatgpt-api-plans.md)
-

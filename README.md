@@ -27,11 +27,23 @@ https://api.ai-router.dev/v1
 
 ## Quick start
 
-Set your API key:
+Set your API key and choose a model available to that key:
 
 ```bash
 export AI_ROUTER_API_KEY="replace_with_your_api_key"
+export AI_ROUTER_MODEL="model_id_from_your_dashboard_or_models_response"
 ```
+
+With an authenticated API key, you can list the model IDs available to it:
+
+```bash
+curl -sS https://api.ai-router.dev/v1/models \
+  -H "Authorization: Bearer $AI_ROUTER_API_KEY"
+```
+
+Copy an `id` from the response into `AI_ROUTER_MODEL`. The available catalog can
+vary by API key, account configuration, and time; the dashboard is an equivalent
+source of the current model ID.
 
 Call the OpenAI-compatible chat completions endpoint:
 
@@ -39,15 +51,17 @@ Call the OpenAI-compatible chat completions endpoint:
 curl https://api.ai-router.dev/v1/chat/completions \
   -H "Authorization: Bearer $AI_ROUTER_API_KEY" \
   -H "Content-Type: application/json" \
-  -d '{
-    "model": "gpt-5.4-mini",
+  --data-binary @- <<JSON
+  {
+    "model": "$AI_ROUTER_MODEL",
     "messages": [
       { "role": "user", "content": "Write one sentence about OpenAI-compatible APIs." }
     ]
-  }'
+  }
+JSON
 ```
 
-Use the model name shown in your AI ROUTER dashboard. The example uses `gpt-5.4-mini` as a low-cost default.
+Use the model name returned by `/v1/models` or shown in your AI ROUTER dashboard.
 
 ## Documentation
 
@@ -77,6 +91,11 @@ Use the model name shown in your AI ROUTER dashboard. The example uses `gpt-5.4-
 
 - [OpenAI Python SDK with AI ROUTER](docs/integrations/openai-python-sdk.md)
 - [OpenAI Node.js SDK with AI ROUTER](docs/integrations/openai-nodejs-sdk.md)
+- [Cursor compatibility status](docs/integrations/cursor.md)
+- [Continue](docs/integrations/continue.md)
+- [LiteLLM](docs/integrations/litellm.md)
+- [Open WebUI](docs/integrations/open-webui.md)
+- [BYOK smoke-test checklist](docs/integrations/byok-smoke-test-checklist.md)
 
 ## What this repository contains
 

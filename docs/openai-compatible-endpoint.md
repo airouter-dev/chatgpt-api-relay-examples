@@ -30,6 +30,21 @@ const client = new OpenAI({
 });
 ```
 
+## Discover a model
+
+Model IDs are not hard-coded in this repository because availability can differ
+by API key and can change. With an authenticated key, list the IDs available to
+your integration:
+
+```bash
+curl -sS https://api.ai-router.dev/v1/models \
+  -H "Authorization: Bearer $AI_ROUTER_API_KEY"
+```
+
+Use an `id` from the response as your request's `model` value. You can also
+choose a model from the AI ROUTER dashboard. Do not assume that a model ID from
+another account or an old example remains available.
+
 ## What compatibility means
 
 OpenAI-compatible means AI ROUTER follows familiar OpenAI-style API patterns where supported. It does not mean AI ROUTER is an official OpenAI service, and it does not mean every model, parameter, or behavior is identical. Check the dashboard for available models and plan rules.
@@ -47,4 +62,4 @@ Related:
 - [ChatGPT API relay](chatgpt-api-relay.md)
 - [Python SDK integration](integrations/openai-python-sdk.md)
 - [Node.js SDK integration](integrations/openai-nodejs-sdk.md)
-
+- [Client integration guides](integrations/README.md)
