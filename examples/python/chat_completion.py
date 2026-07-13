@@ -9,7 +9,7 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="gpt-5.4-mini",
+    model=os.environ["AI_ROUTER_MODEL"],
     messages=[
         {
             "role": "user",
@@ -19,4 +19,3 @@ response = client.chat.completions.create(
 )
 
 print(response.choices[0].message.content)
-

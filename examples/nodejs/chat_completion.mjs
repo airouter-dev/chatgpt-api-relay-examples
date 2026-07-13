@@ -5,8 +5,12 @@ const client = new OpenAI({
   baseURL: "https://api.ai-router.dev/v1",
 });
 
+if (!process.env.AI_ROUTER_MODEL) {
+  throw new Error("Set AI_ROUTER_MODEL to a model from /v1/models or the dashboard.");
+}
+
 const response = await client.chat.completions.create({
-  model: "gpt-5.4-mini",
+  model: process.env.AI_ROUTER_MODEL,
   messages: [
     {
       role: "user",
@@ -16,4 +20,3 @@ const response = await client.chat.completions.create({
 });
 
 console.log(response.choices[0].message.content);
-
