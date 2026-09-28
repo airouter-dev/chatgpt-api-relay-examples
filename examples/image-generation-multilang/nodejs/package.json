@@ -1,0 +1,16 @@
+{
+  "name": "ai-router-image-demo-node",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A dependency-free OpenAI-compatible text-to-image and image-to-image demo",
+  "type": "module",
+  "engines": {
+    "node": ">=18.17"
+  },
+  "scripts": {
+    "start": "node src/cli.mjs",
+    "demo": "node src/cli.mjs",
+    "test": "node --test"
+  },
+  "license": "MIT"
+}

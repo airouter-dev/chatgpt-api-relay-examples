@@ -1,0 +1,16 @@
+{
+  "name": "ai-router/image-generation-multilang",
+  "description": "A modular AI-ROUTER text-to-image and image-to-image demo",
+  "type": "project",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.1",
+    "ext-curl": "*",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "AiRouter\\ImageDemo\\": "src/"
+    }
+  }
+}

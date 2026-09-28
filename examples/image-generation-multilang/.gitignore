@@ -1,0 +1,30 @@
+.env
+.env.*
+!.env.example
+output/
+generated/
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+target/
+build/
+dist/
+node_modules/
+vendor/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+coverage/
+composer.lock
+
+# The parent repository ignores generic `tests` directories; these are part of
+# this standalone example and must remain publishable.
+!cpp/tests/
+!cpp/tests/**
+!python/tests/
+!python/tests/**
+!nodejs/test/
+!nodejs/test/**
