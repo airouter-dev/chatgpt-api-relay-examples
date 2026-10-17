@@ -65,5 +65,5 @@ jobs:
         run: |
           test -f examples/x402/.env.example
           test -f examples/x402/config.example.toml
-          ! grep -RInE 'sk-[A-Za-z0-9]{20,}|0x[0-9a-fA-F]{64}' examples/x402 --exclude='*.lock'
+          ! grep -RInE 'AI_ROUTER_API_KEY=sk-[A-Za-z0-9]{20,}|AI_ROUTER_X402_EVM_PRIVATE_KEY=0x[0-9a-fA-F]{64}|EVM_PRIVATE_KEY=0x[0-9a-fA-F]{64}' examples/x402 --exclude='*.lock'
           python -m json.tool examples/x402/model-endpoints.json >/dev/null
