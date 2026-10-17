@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-router-x402-example"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = ["python-dotenv>=1.0", "requests>=2.31", "eth-account>=0.13", "x402[evm,requests]>=2.25,<3"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+ai-router-x402 = "ai_router_x402.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

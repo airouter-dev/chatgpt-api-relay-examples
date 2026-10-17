@@ -25,6 +25,7 @@ https://api.ai-router.dev/v1
 | Python | [examples/python/chat_completion.py](examples/python/chat_completion.py) |
 | Node.js | [examples/nodejs/chat_completion.mjs](examples/nodejs/chat_completion.mjs) |
 | Image generation and editing | [Python, Node.js, C++, Go, Rust, and PHP](examples/image-generation-multilang/README.md) |
+| x402 paid image calls | [Go, Python, Node.js, curl, and six-language guide](examples/x402/README.md) |
 
 ## Quick start
 
@@ -83,6 +84,7 @@ Use the model name returned by `/v1/models` or shown in your AI ROUTER dashboard
 - OpenAI-compatible API notes: [docs/openai-compatible-api.md](docs/openai-compatible-api.md)
 - International SEO link map: [docs/international-seo.md](docs/international-seo.md)
 - Multilingual image generation API examples: [examples/image-generation-multilang](examples/image-generation-multilang/README.md)
+- x402 paid image client examples: [examples/x402](examples/x402/README.md)
 
 ## Use-case pages
 

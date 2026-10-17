@@ -3,4 +3,15 @@
 node_modules/
 __pycache__/
 *.pyc
+*.egg-info/
+
+examples/x402/.env
+examples/x402/config.toml
+examples/x402/**/.env
+examples/x402/**/config.toml
+examples/x402/**/.venv/
+examples/x402/**/node_modules/
+examples/x402/**/output/
+examples/x402/**/artifacts/
+examples/x402/**/.egg-info/
 

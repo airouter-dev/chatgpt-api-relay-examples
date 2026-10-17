@@ -1,0 +1,12 @@
+# Copy to config.toml. This file is safe to commit because it contains no secret.
+base_url = "https://api.ai-router.dev"
+mode = "probe"
+endpoint = "generations"
+model = "gpt-image-2"
+prompt = "A small red fox under a moonlit sky"
+n = 1
+image_path = ""
+timeout_seconds = 60
+evm_private_key = ""
+evm_rpc_url = "https://mainnet.base.org"
+

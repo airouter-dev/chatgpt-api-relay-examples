@@ -1,0 +1,21 @@
+{
+  "base_url": "https://api.ai-router.dev",
+  "network": "eip155:8453",
+  "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+  "asset_decimals": 6,
+  "scheme": "exact",
+  "unit_price_usdc": "0.0045",
+  "quantity_parameter": "n",
+  "quantity_min": 1,
+  "quantity_max": 4,
+  "routes": {
+    "generations": "/x402/v1/images/generations",
+    "edits": "/x402/v1/images/edits"
+  },
+  "models": [
+    "gpt-image-2",
+    "gpt-image-2.5",
+    "gpt-image-2.5-sunburst",
+    "gpt-image-2.5-flare"
+  ]
+}
