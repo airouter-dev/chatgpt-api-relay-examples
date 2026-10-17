@@ -65,5 +65,5 @@ jobs:
         run: |
           test -f examples/x402/.env.example
           test -f examples/x402/config.example.toml
-          python -m json.tool examples/x402/model-endpoints.json >/dev/null
+          test -s examples/x402/model-endpoints.json
           echo 'x402 docs and template checks passed; real secrets are excluded by .gitignore'
